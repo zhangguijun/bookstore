@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎来注册哦</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/megamenu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login-register.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>  
+    <script type="text/javascript" src="js/megamenu.js"></script>
+    <script src="js/login-register.js"></script>
+    <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+    <script>$(document).ready(function(c) {
+        $('.alert-close').on('click', function(c){
+            $('.message').fadeOut('slow', function(c){
+                $('.message').remove();
+            });
+        });	  
+    });
+    </script>
+    <script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+    });
+    </script>  
+     <script>
+
+    $(document).ready(function(c) {
+	$('#changeVerify').on('click', function(c){
+        $('#verifyImage').attr("src","admin/getverify.php?k="+Math.random());
+	});	  
+    });
+
+ </script>
+</head>
+<body>
+     <div class="header_top clearfix">
+        <div class="container">
+            <div style="float:left;" class="hleft">
+                 <span>您好，欢迎您来到图书商城</span>
+            </div>
+            <div style="right;" class="hright">
+                <ul>
+			        <li class="active"><a href="login.html">登录</a></li> 
+			    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-box"></div>
+    <div class="header_bottom">
+        <div class="container">
+            <div class="col-xs-9 header_bottom-left">
+                <div class="col-xs-2 logo">
+                    <h1><a href="index.html"><span>Book</span>shop</a></h1>
+                </div>
+                <div class="col-xs-7 menu">
+                            <ul class="megamenu skyblue">
+                            <li class="active grid"><a class="color1" href="index.html">首页</a>
+                            </li>
+                            <li class="grid"><a class="color2" href="#">实体书</a>
+                            <div class="megapanel">
+                                <div class="row">
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <ul>
+                                                <li><a href="men.html">人文</a></li>
+                                                <li><a href="men.html">计算机</a></li>
+                                                <li><a href="men.html">历史</a></li>
+                                                <li><a href="men.html">传记</a></li>
+                                                <li><a href="men.html">推理悬疑</a></li>
+                                                <li><a href="men.html">科幻</a></li>
+                                                <li><a href="men.html">纪实</a></li>
+                                            </ul>	
+                                        </div>							
+                                    </div>
+                                </div>
+                                </div>
+                        </li>
+                        <li><a class="color4" href="about.html">电子书</a></li>				
+                        <li><a class="color5" href="404.html">热门活动</a></li>
+                        <li><a class="color6" href="contact.html">高考</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-3 header-bottom-right">
+                <div class="shopcar">
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="main container">
+
+		<div class="col-xs-12 col-md-6 login-form fl">
+			<div class="form-hd">
+				<h3>用户注册</h3>
+			</div>
+			<div class="form-bd regbox">
+				<form action="lib/registerck.php?type=2" method="POST">
+					<dl>
+						<dt>用户名</dt>
+						<dd><input type="text" name="user" id="reg-name" class="text" />
+                            <span class="error error5"></span>
+                        </dd>
+                        
+					</dl>
+					<dl>
+						<dt>密码</dt>
+						<dd><input type="password" name="pwd" id="reg-pwd" class="text"/>
+                        <span class="error error5"></span>
+                        </dd>
+                        
+					</dl>
+					<dl>
+						<dt>确认密码</dt>
+						<dd><input type="password" name="repwd" id="reg-rpwd" class="text"/>
+                        <span class="error error5"></span>
+                        </dd>
+                        
+					</dl>
+					<dl>
+						<dt>邮箱</dt>
+						<dd><input type="text" name="email" id="reg-em" class="text"/>
+                        <span class="error error5"></span>
+                        </dd>
+                        
+					</dl>
+                    <dl>
+						<dt>收货地址</dt>
+						<dd><input type="text" name="addr" id="reg-addr" class="text"/>
+                        <span class="error error5"></span>
+                        </dd>
+                        
+					</dl>
+					<dl>
+						<dt>验证码</dt>
+						<dd><input type="text" name="verify" class="text code" size="10" style="width:58px;height:25px;">
+                         <img id="verifyImage" name="verify" src="admin/getverify.php?k=1" alt="" align="absmiddle" style="position:relative;top:-2px;"/>
+                         <span class="error error5"></span>
+                          <a href="javascript:;" id="changeVerify"  style="color:#999;">看不清，换一张</a></dd>
+					</dl>
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd><input type="submit" value="立即注册" class="submit"/> <input type= "checkbox" checked="checked"/>阅读并同意<a href="" class="forget">服务协议</a></dd>
+					</dl>
+				</form>
+				
+			</div>
+			<div class="form-ft">
+			
+			</div>		
+		</div>
+		
+		<div class="col-xs-12 col-md-6  login-form-left fr">
+			<dl class="func clearfix">
+				<dt>注册之后您可以</dt>
+				<dd class="ico05"><i></i>购买商品支付订单</dd>
+				<dd class="ico01"><i></i>申请开店销售商品</dd>
+				<dd class="ico03"><i></i>空间好友推送分享</dd>
+				<dd class="ico02"><i></i>收藏商品关注店铺</dd>
+				<dd class="ico06"><i></i>商品资讯服务评价</dd>
+				<dd class="ico04"><i></i>安全交易诚信无忧</dd>
+			</dl>
+			
+			<div class="if">
+				<h2>如果您是本站用户</h2>
+				<p>我已经注册过账号，立即 <a href="login.html" class="register">登录</a> 或是 <a href="" class="findpwd">找回密码？</a></p>
+			</div>
+		</div>
+	</div>
+    
+</body>
+</html>

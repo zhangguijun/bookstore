@@ -1,0 +1,173 @@
+
+@media (max-width:1280px){
+.icon1 ul {
+	right: -50px;
+}
+ul.icon1.sub-icon1.profile_img {
+	margin-left: 0;
+}
+.date-comments, .data-comments {
+ 	top: -70px;
+  	left: -20px;
+	min-width: 100px;
+	min-height: 100px;
+}
+.date-comments .comments {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.banner {
+	min-height: 400px;
+}
+.banner_desc {
+  padding-top: 7em;
+}
+.banner_desc h1 {
+ 	font-size: 3em;
+}
+.banner_desc h2 {
+	font-size: 1.6em;
+}
+.button a {
+  	padding: 10px 30px;
+	font-size: 1.1em;
+}
+ul.list_1 {
+	padding: 0 15% 0 0;
+}
+.row_5 {
+  padding: 4% 6% 0 5%;
+}
+.images_3_of_2 {
+  width: 29.2%;
+  margin-right: 2.6%;
+}
+.span_3_of_2 {
+  width: 66.3333%;
+}
+ul.single_social li {
+  margin-right: 9%;
+}
+.col-xs-2 {
+  width: 20.666667% !important;
+}
+.col-xs-7 {
+  width: 67.333333% !important;
+}
+.icon1 ul {
+	right: -10px;
+}
+}
+@media (max-width:920px){
+.header-bottom-right {
+  display: none;
+}
+.col-xs-9.header-bottom-left {
+  width: 100%;
+}
+.col-xs-7 {
+  width: 52.333333% !important;
+  float: right;
+}
+
+}
+@media (max-width:768px){
+.col-xs-9.header-bottom-left {
+  width: 100%;
+}
+.menu{
+  float: right;
+}
+.icon1 ul {
+	right: -30px;
+}	
+.col-xs-7 {
+  margin-top: -6px;
+
+}
+
+@media (max-width:736px){
+.header-bottom-right {
+  	display: none;
+}
+.header-bottom-left {
+  width: 100% !important;
+}
+.logo {
+  width: 29.666667% !important;
+}
+.menu {
+  width: 70%;
+}
+.images_3_of_2 {
+  width: 100%;
+  margin-right: 0;
+  float:none;
+}
+.single-top-in {
+  width: 100%;
+  float: left;
+    margin: 0 0 2em;
+}
+.grid {
+  width: 53%;
+}
+.thumb-image {
+  width: 257px;
+}
+}
+@media (max-width:568px){
+.logo {
+  	width: 33.666667% !important;
+}
+.menu {
+  width: 66%;
+}
+.login-form-left {
+  display: none;
+}
+}
+@media (max-width:414px){
+.logo {
+  	width: 46.666667% !important;
+}
+.menu {
+  width: 53%;
+  float: right;
+}
+.login-form-left {
+  display: none;
+}
+}
+@media (max-width:320px){
+.logo h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin:0;
+}	
+.header_bottom {
+  padding: 1em 0;
+}
+.container{
+	padding:0 10px !important;
+}
+.header-bottom-left {
+  width: 100% !important;
+}
+
+.header-bottom-left {
+  width: 100% !important;
+  padding: 0 !important;
+}
+.menu {
+  width: 53%;
+  float: right;
+  padding-right: 0;
+  top: -5px;
+}
+.logo {
+ 	margin-top: 3px;
+}
+
+}

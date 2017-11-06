@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+      <div class="col-xs-7 menu">
+                    <ul class="megamenu skyblue">
+                            <li class=" grid"><a class="color1" href="index.html">首页</a>
+                            </li>
+                            <li class="grid"><a class="color2" href="#">实体书</a>
+                                <div class="megapanel">
+                                    <div class="row">
+                                        <div class="col1">
+                                            <div class="h_nav">
+                                                <ul>
+                                                    <li><a href="men.html">人文</a></li>
+                                                    <li><a href="men.html">计算机</a></li>
+                                                    <li><a href="men.html">历史</a></li>
+                                                    <li><a href="men.html">传记</a></li>
+                                                    <li><a href="men.html">推理悬疑</a></li>
+                                                    <li><a href="men.html">科幻</a></li>
+                                                    <li><a href="men.html">纪实</a></li>
+                                                </ul>	
+                                            </div>							
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="color4" href="about.html">电子书</a></li>				
+                            <li><a class="color5" href="404.html">热门活动</a></li>
+                            <li><a class="color6" href="contact.html">高考</a></li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="添加" id="caidan" value="" />
+                <input type="button" value="添加" class="add" />
+                <input type="button" value="减少" class="sub" />
+</body>
+</html>
+<script>
+    $(function(){
+        $('.add').click(function(){
+             $val = $('#caidan').val();
+　           $li = $("<li><a class='' href=''></a></li>").html($val);
+            $('.megamenu').append($li);
+        });
+        $('.sub').click(function(){
+            $("ul li:last").remove();//删除ul节点中最后一个 
+        });
+       
+    });
+</script>

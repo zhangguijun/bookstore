@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>修改个人资料</title>
+	
+	<link rel="stylesheet" href="css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="css/shop_header.css" type="text/css" />
+	<link rel="stylesheet" href="css/shop_manager.css" type="text/css" />
+	<link rel="stylesheet" href="css/shop_form.css" type="text/css" />
+   
+</head>
+<body>
+	
+
+
+	<!-- 我的个人中心 -->
+	<div class="shop_member_bd clearfix">
+		<!-- 左边导航 -->
+		<div class="shop_member_bd_left clearfix">
+			
+			<div class="shop_member_bd_left_pic">
+				<a href="javascript:void(0);"><img src="images/avatar.png" /></a>
+			</div>
+			<div class="clear"></div>
+
+			<dl>
+				<dt>我的交易</dt>
+				<dd><span><a href="">已购买商品</a></span></dd>
+				<dd><span><a href="">我的收藏</a></span></dd>
+				<dd><span><a href="">评价管理</a></span></dd>
+			</dl>
+
+			<dl>
+				<dt>我的账户</dt>
+				<dd><span><a href="person.html">个人资料</a></span></dd>
+				<dd><span><a href="password_eidt.html">密码修改</a></span></dd>
+				<dd><span><a href="">收货地址</a></span></dd>
+			</dl>
+
+		</div>
+		<!-- 左边导航 End -->
+		
+		<!-- 右边购物列表 -->
+		<div class="shop_member_bd_right clearfix">
+			
+			<div class="shop_meber_bd_good_lists clearfix">
+				<div class="title"><h3>基本信息</h3></div>
+				<div class="clear"></div>
+				<dic class="shop_home_form">
+					<form action="lib/personupdate.php?type=1" name="" class="shop_form" method="post">
+						<ul>
+							<li><label>用户名称：</label>wanglele</li>
+							<li><label>电子邮件：</label>wanglele@hotmail.com</li>
+							<li><label>真实姓名：</label><input type="text" class="truename form-text" /></li>
+							<li><label>收货地址：</label><input type="text" class="truename form-text" /></li>
+							<li><label>邮    编：</label><input type="text" class="truename form-text" /></li>
+							<li><label>收货电话：</label><input type="text" class="truename form-text" /></li>
+							<li class="bn"><label>&nbsp;</label><input type="submit" class="form-submit btn" value="保存修改" /></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 右边购物列表 End -->
+
+	</div>
+	<!-- 我的个人中心 End -->
+
+	
+</body>
+</html>
